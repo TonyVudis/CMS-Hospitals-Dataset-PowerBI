@@ -1,0 +1,1 @@
+-- Second Question : Does hospital size, measured by total discharges, relate to the charge-to-payment ratio?

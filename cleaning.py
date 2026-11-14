@@ -6,6 +6,7 @@ def load_data():
     CMS_path = os.path.join(py_path, 'CMS.CSV')
 
     CMS_Data = pd.read_csv(CMS_path, encoding='utf-8')
+
     return CMS_Data
 
 CMS_data = load_data()
@@ -30,15 +31,23 @@ def initial_data(data):
         .str.strip()
         .str.replace(" ", "_")
     )
+
+    midwest_data = data_copy[data_copy['rndrng_prvdr_state_abrvtn'].isin(['IL', 'IN', 'IA', 'KS', 'MI', 'MN', 'MO', 'NE', 'ND', 'OH', 'SD', 'WI'])].reset_index(drop=True)
+    data_report["midwest_shape"] = midwest_data.shape
+    data_report["midwest_missing_values"] = midwest_data.isnull().sum().to_dict()
+    data_report["midwest_duplicates"] = midwest_data.duplicated().sum()
+
     #Adding to data report with cleaned data
     data_report["cleaned_columns"] = data_copy.columns.tolist()
     data_report['cleaned_shape'] = data_copy.shape
     data_report['cleaned_missing_values'] = data_copy.isnull().sum().to_dict()
     data_report['cleaned_duplicates'] = data_copy.duplicated().sum()
 
-    return data_copy, data_report
+    return data_copy, data_report, midwest_data
 
-CMS_data_cleaned, CMS_data_report = initial_data(CMS_data)
+CMS_data_cleaned, CMS_data_report, CMS_midwest_data = initial_data(CMS_data)
 
-CMS_data_cleaned = CMS_data_cleaned.to_csv('CMS_data_cleaned.csv', index=False)
+CMS_midwest_data = CMS_midwest_data.to_csv('CMS_midwest_data.csv', index=False)
+
+
 
