@@ -42,7 +42,7 @@ In terminal run in order:
 
     python3 SQL_Query.py
 
-The python file `cleaning.py` will first clean the data and sort the data by region into Midwest categories. Then the `SQL_Query.py` file runs SQL queries on that data that will be in csv format named `CMS_midwest_data.csv`. The results from the SQL Queries can be seen in the output file named `V1_SQL_OUTPUT.txt`. 
+The python file `cleaning.py` will first clean the data and sort the data by region into Midwest categories. Then the `SQL_Query.py` file runs SQL queries on that data that will be in csv format named `CMS_midwest_data.csv`. The results from the SQL Queries can be seen in the designated output csv named `Question{number}_output.csv`. 
 
 ---
 
@@ -56,8 +56,8 @@ CMS’s Medicare Inpatient Hospitals - by Provider and Service from
 
 # 2024 Single Year Questions 
 
-    How do charges and payments vary across Midwest hospitals with the same DRG? Does payment vary much less than charges?
+    How do payments vary across Midwest hospitals with the same DRG?
 
-    Does hospital size, measured by total discharges, relate to the charge-to-payment ratio?
+    Does hospital size, measured by total discharges, relate to the medicare coverage-to-payment ratio?
 
     How does cost or volume differ by geography, such as rural vs. urban or by city?
