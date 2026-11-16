@@ -15,6 +15,7 @@ With drg_stats as (
 SELECT
     h.drg_cd, 
     h.drg_desc,
+    h.rndrng_prvdr_ccn AS hospital_id,
     h.rndrng_prvdr_org_name AS hospital,
     h.rndrng_prvdr_city AS city,
     h.rndrng_prvdr_state_abrvtn AS state,
@@ -23,7 +24,8 @@ SELECT
     ROUND(d.min_payment, 2) AS lowest_payment,
     ROUND(d.max_payment, 2) AS highest_payment,
     ROUND(d.max_payment - d.min_payment, 2) AS payment_range,
-    d.num_hospitals
+    d.num_hospitals,
+    h.tot_dschrgs as total_discharges
 FROM CMS_midwest_data AS h
 JOIN drg_stats AS d ON h.drg_cd = d.drg_cd
 ORDER BY h.drg_cd, h.avg_tot_pymt_amt DESC;
