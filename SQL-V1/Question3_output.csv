@@ -1,11 +1,11 @@
 rndrng_prvdr_ruca_desc,total_discharges,avg_payment,avg_medicare_payment
+"Metropolitan area core: primary flow within an urbanized area of 50,000 and greater",902406.0,18477.23714753125,14831.924509868133
+Unknown,13475.0,16808.5202486797,13700.075841295355
+"Metropolitan area high commuting: primary flow 30% or more to a urbanized area of 50,000 and greater",18270.0,13393.747021755486,10640.041604792279
 "Secondary flow 30% to <50% to a urban cluster of 2,500 to 9,999",14.0,13282.785714,12233.642857
-"Rural areas: primary flow to a tract outside a urbanized area of 50,000 and greater or UC",22.035714285714285,406.63117424413264,355.57726017283164
-"Micropolitan high commuting: primary flow 30% or more to a urban cluster of 10,000 to 49,999",31.530864197530864,130.99317963587862,113.22846844540467
-"Secondary flow 30% to <50% to a urbanized area of 50,000 and greater",26.719745222929937,73.4865992655645,60.52134135882186
-"Secondary flow 30% to <50% to a larger urbanized area of 50,000 and greater",27.609467455621303,63.0016424159133,51.39721880798991
-Unknown,32.946210268948654,41.09662652488924,33.49651794937739
-"Small town core: primary flow within an urban cluster of 2,500 to 9,999",23.651006711409394,40.77811374277845,35.875740128279126
-"Metropolitan area high commuting: primary flow 30% or more to a urbanized area of 50,000 and greater",32.80071813285458,24.046224455575377,19.102408626197988
-"Micropolitan area core: primary flow within an urban cluster of 10,000 to 49,999",27.796781319028085,3.982902149156705,3.4369574645984673
-"Metropolitan area core: primary flow within an urbanized area of 50,000 and greater",32.90090418550386,0.6736633056559447,0.5407585135579748
+"Micropolitan area core: primary flow within an urban cluster of 10,000 to 49,999",88088.0,12621.816910677599,10891.718205312543
+"Small town core: primary flow within an urban cluster of 2,500 to 9,999",7048.0,12151.87789534798,10690.97055822718
+"Secondary flow 30% to <50% to a urbanized area of 50,000 and greater",4195.0,11537.396084693626,9501.850593335032
+"Rural areas: primary flow to a tract outside a urbanized area of 50,000 and greater or UC",617.0,11385.672878835714,9956.163284839286
+"Secondary flow 30% to <50% to a larger urbanized area of 50,000 and greater",4666.0,10647.277568289348,8686.129978550294
+"Micropolitan high commuting: primary flow 30% or more to a urban cluster of 10,000 to 49,999",2554.0,10610.44755050617,9171.505944077779

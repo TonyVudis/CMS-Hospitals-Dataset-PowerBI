@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 def load_data():
-    py_path = os.getcwd()
+    py_path = os.Path(__file__).resolve().parent
     CMS_path = os.path.join(py_path, 'CMS.CSV')
 
     CMS_Data = pd.read_csv(CMS_path, encoding='utf-8')

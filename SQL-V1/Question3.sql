@@ -3,9 +3,9 @@
 With hospital_stats as (
     SELECT
         rndrng_prvdr_ruca_desc,
-        SUM(tot_dschrgs) / COUNT(*) as total_discharges,
-        AVG(avg_tot_pymt_amt) / COUNT(*) as avg_payment,
-        AVG(avg_mdcr_pymt_amt) / COUNT(*) as avg_medicare_payment
+        SUM(tot_dschrgs) as total_discharges,
+        AVG(avg_tot_pymt_amt) as avg_payment,
+        AVG(avg_mdcr_pymt_amt) as avg_medicare_payment
     FROM CMS_midwest_data
     GROUP BY rndrng_prvdr_ruca_desc
 )

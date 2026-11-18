@@ -19,8 +19,10 @@ def V1_Question(csv_path, query, question_type):     #Question Calling from SQL 
         con.read_csv(str(csv_path)).create_view("CMS_midwest_data")
         result: pd.DataFrame = con.execute(query).df()
 
-    result.to_csv(f"SQL-V1/Question{question_type}_output.csv", mode="a", index=False)
-
+    result.to_csv(
+        project_dir / "SQL-V1" / f"Question{question_type}_output.csv",
+        index=False
+    )
 V1_Question(csv_path, query1, 1)
 V1_Question(csv_path, query2, 2)
 V1_Question(csv_path, query3, 3)

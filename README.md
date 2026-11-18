@@ -85,5 +85,5 @@ CMS’s Medicare Inpatient Hospitals - by Provider and Service from
 ![Average Total Payment by State](Question1-Dashboard-Slides/PayperState.png)
 
 <table>
-  <tr><td><strong>This visualization highlights the average total payment per state. It is important to open the visual in Power BI and look at the number of hospitals in each state. The highest average total payment is Minnesota with about 45 hospitals at about 21k.</strong><br><br></td></tr>
+  <tr><td><strong>This visualization highlights the average total payment per state. It is important to open the visual in Power BI and look at the number of hospitals in each state. The highest average total payment is Minnesota with about 45 hospitals at about 22k.</strong><br><br></td></tr>
 </table>
